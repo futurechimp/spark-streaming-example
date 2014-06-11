@@ -2,14 +2,13 @@ package com.constructiveproof.sparkstreamingexample
 
 import com.typesafe.config.ConfigFactory
 import org.apache.spark.SparkContext._
-import org.apache.spark.storage.StorageLevel
 
 // Necessary for the PairRDDFunctions which allow us to sort (K,V)
 import org.apache.spark.streaming.{Minutes, Seconds, StreamingContext}
 import org.apache.spark.streaming.twitter._
 import twitter4j.auth.{Authorization, OAuthAuthorization}
 
-object StreamingApp {
+object TwitterHashPopularity {
 
 
   /**
